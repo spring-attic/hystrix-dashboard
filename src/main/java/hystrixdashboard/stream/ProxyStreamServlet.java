@@ -1,4 +1,4 @@
-package io.spring.platform.netflix.hystrix.stream;
+package hystrixdashboard.stream;
 
 import org.apache.http.Header;
 import org.apache.http.HttpResponse;

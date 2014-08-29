@@ -6,8 +6,8 @@
 	<groupId>org.demo</groupId>
 	<artifactId>hystrix-dashboard</artifactId>
 	<packaging>jar</packaging>
-	<name>Spring Platform Netflix Hystrix</name>
-	<url>http://projects.spring.io/spring-platform/</url>
+	<name>Spring Cloud Netflix Hystrix</name>
+	<url>http://projects.spring.io/spring-cloud/</url>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -26,15 +26,15 @@
 	</build>
 
 	<properties>
-		<spring-platform-config.version>1.0.0.BUILD-SNAPSHOT</spring-platform-config.version>
+		<spring-cloud-config.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-config.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>org.springframework.platform</groupId>
-				<artifactId>spring-platform-starters</artifactId>
-				<version>${spring-platform-config.version}</version>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starters</artifactId>
+				<version>${spring-cloud-config.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -46,16 +46,16 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.platform</groupId>
-			<artifactId>spring-platform-netflix-core</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-netflix-core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.platform</groupId>
-			<artifactId>spring-platform-config-client</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-client</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.netflix.eureka</groupId>

@@ -13,6 +13,7 @@ server:
 
 logging:
   level: INFO
+    org.springframework.web: DEBUG
 
 eureka:
   client:

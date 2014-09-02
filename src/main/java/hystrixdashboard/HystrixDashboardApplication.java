@@ -1,12 +1,12 @@
 package hystrixdashboard;
 
 import hystrixdashboard.stream.MockStreamServlet;
-import hystrixdashboard.stream.ProxyStreamServlet;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.embedded.ServletRegistrationBean;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
+import org.springframework.cloud.netflix.hystrix.annotations.EnableHystrixDashboard;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @ComponentScan
 @EnableAutoConfiguration
 @Controller
+@EnableHystrixDashboard
 public class HystrixDashboardApplication extends SpringBootServletInitializer {
 	
 	@RequestMapping("/")
@@ -41,8 +42,4 @@ public class HystrixDashboardApplication extends SpringBootServletInitializer {
         return new ServletRegistrationBean(new MockStreamServlet(), "/mock.stream");
     }
 
-    @Bean
-    public ServletRegistrationBean proxyStreamServlet() {
-        return new ServletRegistrationBean(new ProxyStreamServlet(), "/proxy.stream");
-    }
 }

@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 	<name>Spring Cloud Netflix Hystrix</name>
 	<url>http://projects.spring.io/spring-cloud/</url>
-    <version>1.0.0.BUILD-SNAPSHOT</version>
+    <version>1.0.0.M2</version>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -34,7 +34,7 @@
 	</build>
 
 	<properties>
-		<spring-cloud-config.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-config.version>
+		<spring-cloud-config.version>1.0.0.M2</spring-cloud-config.version>
 	</properties>
 
 	<dependencyManagement>

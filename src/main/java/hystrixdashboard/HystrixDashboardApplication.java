@@ -25,7 +25,7 @@ public class HystrixDashboardApplication extends SpringBootServletInitializer {
 	
 	@RequestMapping("/")
 	public String home() {
-		return "forward:/hystrix/index.html";
+		return "forward:/hystrix";
 	}
 
     @Override

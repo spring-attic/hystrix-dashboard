@@ -8,12 +8,12 @@
 	<packaging>jar</packaging>
 	<name>Spring Cloud Netflix Hystrix</name>
 	<url>http://projects.spring.io/spring-cloud/</url>
-    <version>1.0.1.BUILD-SNAPSHOT</version>
+    <version>1.0.1.RELEASE</version>
 
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-starter-parent</artifactId>
-		<version>1.0.1.BUILD-SNAPSHOT</version>
+		<version>1.0.1.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
